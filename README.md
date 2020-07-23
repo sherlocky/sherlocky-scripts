@@ -20,3 +20,5 @@
 
 - 配合 certbot 自动更新命令：  
 ``certbot renew --cert-name xxx.yyy.com --manual-auth-hook /usr/bin/certbot-alidns --deploy-hook "python3 /opt/bin/qiniu_cdn_ssl_cert_auto_renew.py xxx.yyy.com"``
+
+> 详细使用方法可参考：[使用七牛云 API 上传 letsencrypt SSL 证书并绑定到 CDN](https://halo.sherlocky.com/archives/qiniu-sslcert)
